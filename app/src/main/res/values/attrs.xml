@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedTextView">
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="gradientStartColor" format="color" />
+        <attr name="gradientEndColor" format="color" />
+        <attr name="gradientOrientation" format="enum">
+            <enum name="left_right" value="0" />
+            <enum name="top_bottom" value="1" />
+            <enum name="tr_bl" value="2" />
+            <enum name="br_tl" value="3" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="RoundedEditText">
+        <attr name="cornerRadius" />
+        <attr name="strokeWidth" />
+        <attr name="strokeColor" />
+        <attr name="fillColor" />
+        <attr name="focusedStrokeColor" format="color" />
+        <attr name="focusedFillColor" format="color" />
+        <attr name="focusedStrokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

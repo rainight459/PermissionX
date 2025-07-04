@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义圆角文本框示例"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 基本圆角文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基本圆角文本框"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="12dp"
+            app:fillColor="#E3F2FD"
+            app:strokeWidth="2dp"
+            app:strokeColor="#2196F3" />
+
+        <!-- 渐变背景圆角文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="渐变背景圆角文本框"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="20dp"
+            app:gradientStartColor="#FF6B6B"
+            app:gradientEndColor="#4ECDC4"
+            app:gradientOrientation="left_right" />
+
+        <!-- 圆形文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="圆形"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="60dp"
+            app:fillColor="#9C27B0" />
+
+        <!-- 胶囊形状文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="胶囊形状文本框"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="25dp"
+            app:fillColor="#FF5722" />
+
+        <!-- 边框样式文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="边框样式文本框"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="8dp"
+            app:strokeWidth="3dp"
+            app:strokeColor="#4CAF50" />
+
+        <!-- 垂直渐变文本框 -->
+        <com.example.customtextview.RoundedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="垂直渐变文本框"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="15dp"
+            app:gradientStartColor="#FFD54F"
+            app:gradientEndColor="#FF8A65"
+            app:gradientOrientation="top_bottom" />
+
+        <!-- 可点击的按钮样式 -->
+        <com.example.customtextview.RoundedTextView
+            android:id="@+id/clickableButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可点击的按钮"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cornerRadius="10dp"
+            app:fillColor="#607D8B" />
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义圆角输入框示例"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 基本圆角输入框 -->
+        <com.example.customtextview.RoundedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"
+            app:cornerRadius="12dp"
+            app:fillColor="#F5F5F5"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E0E0E0"
+            app:focusedStrokeColor="#2196F3"
+            app:focusedFillColor="#FFFFFF" />
+
+        <!-- 密码输入框 -->
+        <com.example.customtextview.RoundedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            app:cornerRadius="12dp"
+            app:fillColor="#F5F5F5"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E0E0E0"
+            app:focusedStrokeColor="#FF5722"
+            app:focusedFillColor="#FFFFFF" />
+
+        <!-- 多行输入框 -->
+        <com.example.customtextview.RoundedEditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="请输入多行文本内容..."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            app:cornerRadius="12dp"
+            app:fillColor="#F8F8F8"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E0E0E0"
+            app:focusedStrokeColor="#4CAF50"
+            app:focusedFillColor="#FFFFFF" />
+
+        <!-- 数字输入框 -->
+        <com.example.customtextview.RoundedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入数字"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"
+            android:inputType="number"
+            app:cornerRadius="12dp"
+            app:fillColor="#F5F5F5"
+            app:strokeWidth="2dp"
+            app:strokeColor="#E0E0E0"
+            app:focusedStrokeColor="#9C27B0"
+            app:focusedFillColor="#FFFFFF" />
+
+        <!-- 搜索框样式 -->
+        <com.example.customtextview.RoundedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🔍 搜索..."
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"
+            android:inputType="text"
+            app:cornerRadius="25dp"
+            app:fillColor="#F0F0F0"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0"
+            app:focusedFillColor="#FFFFFF"
+            app:focusedStrokeColor="#2196F3"
+            app:focusedStrokeWidth="2dp" />
+
+    </LinearLayout>
+</ScrollView>
